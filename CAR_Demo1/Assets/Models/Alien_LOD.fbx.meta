@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: a39d5c20a054b6b4b98fc4b3efc11358
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Alien_LOD0
+    100004: Alien_LOD1
+    100006: Alien_LOD2
+    100008: Alien_Root
+    100010: Ctrl_Main
+    100012: hipsGroup
+    100014: jnt_l_leg
+    100016: jnt_l_leg1
+    100018: jnt_l_leg2
+    100020: jnt_l_leg3
+    100022: jnt_l_leg4
+    100024: jnt_l_leg5
+    100026: jnt_l_leg6
+    100028: jnt_l_leg7
+    100030: jnt_l_leg8
+    100032: jnt_r_reg
+    100034: jnt_r_reg1
+    100036: jnt_r_reg2
+    100038: jnt_r_reg3
+    100040: jnt_r_reg4
+    100042: jnt_r_reg5
+    100044: jnt_r_reg6
+    100046: jnt_r_reg7
+    100048: jnt_r_reg8
+    100050: joint1
+    100052: joint13
+    100054: joint13 1
+    100056: joint17
+    100058: joint17 1
+    100060: joint3
+    100062: joint3 1
+    100064: joint33
+    100066: joint34
+    100068: joint35
+    100070: joint36
+    100072: joint37
+    100074: joint38
+    100076: joint42
+    100078: joint42 1
+    100080: joint43
+    100082: joint43 1
+    100084: joint44
+    100086: joint44 1
+    100088: joint5
+    100090: joint5 1
+    100092: joint55
+    100094: joint7
+    100096: joint7 1
+    100098: joint9
+    100100: joint9 1
+    100102: jnt_shadow
+    400000: //RootNode
+    400002: Alien_LOD0
+    400004: Alien_LOD1
+    400006: Alien_LOD2
+    400008: Alien_Root
+    400010: Ctrl_Main
+    400012: hipsGroup
+    400014: jnt_l_leg
+    400016: jnt_l_leg1
+    400018: jnt_l_leg2
+    400020: jnt_l_leg3
+    400022: jnt_l_leg4
+    400024: jnt_l_leg5
+    400026: jnt_l_leg6
+    400028: jnt_l_leg7
+    400030: jnt_l_leg8
+    400032: jnt_r_reg
+    400034: jnt_r_reg1
+    400036: jnt_r_reg2
+    400038: jnt_r_reg3
+    400040: jnt_r_reg4
+    400042: jnt_r_reg5
+    400044: jnt_r_reg6
+    400046: jnt_r_reg7
+    400048: jnt_r_reg8
+    400050: joint1
+    400052: joint13
+    400054: joint13 1
+    400056: joint17
+    400058: joint17 1
+    400060: joint3
+    400062: joint3 1
+    400064: joint33
+    400066: joint34
+    400068: joint35
+    400070: joint36
+    400072: joint37
+    400074: joint38
+    400076: joint42
+    400078: joint42 1
+    400080: joint43
+    400082: joint43 1
+    400084: joint44
+    400086: joint44 1
+    400088: joint5
+    400090: joint5 1
+    400092: joint55
+    400094: joint7
+    400096: joint7 1
+    400098: joint9
+    400100: joint9 1
+    400102: jnt_shadow
+    4300000: Alien_LOD0
+    4300002: Alien_LOD1
+    4300004: Alien_LOD2
+    7400000: Attack
+    7400002: Run
+    7400004: Idle
+    7400006: Take 0012
+    9500000: //RootNode
+    13700000: Alien_LOD0
+    13700002: Alien_LOD1
+    13700004: Alien_LOD2
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: Attack
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 103
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: Run
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - .25
+    - .125
+    - .00999999978
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: Alien_Root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
