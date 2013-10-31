@@ -6,3 +6,5 @@
 *.csproj
 *.unityproj
 *.sln
+
+/CAR_Demo1/*.DotSettings
