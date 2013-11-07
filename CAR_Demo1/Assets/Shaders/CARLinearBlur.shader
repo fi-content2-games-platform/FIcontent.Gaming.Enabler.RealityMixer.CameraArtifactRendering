@@ -64,7 +64,7 @@ Shader "CARLinearBlur"
 			
 				float4 frag (v2f i) : COLOR
 				{
-					const int numSamples = 8;							
+					const int numSamples = 10;							
 					
 					float4 sum = tex2D (_MainTex, i.texcoord);
 					for(int j=0; j < numSamples; j++)

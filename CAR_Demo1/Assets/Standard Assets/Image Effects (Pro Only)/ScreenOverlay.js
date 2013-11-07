@@ -18,8 +18,9 @@ class ScreenOverlay extends PostEffectsBase {
 	public var blendMode : OverlayBlendMode = OverlayBlendMode.Overlay;
 	public var intensity : float = 1.0f;
 	public var alphaMult : float = 1.0f;
-	public var textureMat : Material;	
-//	public var alphaTextureMat : Material;
+	/*public var textureMat : Material;	*/
+	public var texture : RenderTexture;	
+
 			
 	public var overlayShader : Shader;
 	private var overlayMaterial : Material = null;
@@ -42,8 +43,7 @@ class ScreenOverlay extends PostEffectsBase {
 		}
 		overlayMaterial.SetFloat ("_Intensity", intensity);
 		overlayMaterial.SetFloat ("_AlphaMult", alphaMult);
-		overlayMaterial.SetTexture ("_Overlay", textureMat.mainTexture);
-		//overlayMaterial.SetTexture ("_Alpha", alphaTextureMat.mainTexture);
+		overlayMaterial.SetTexture ("_Overlay", texture);		
 		Graphics.Blit (source, destination, overlayMaterial, blendMode);
 	}
 }

@@ -51,7 +51,7 @@ public class CARLinearBlur : ImageEffectBase
     /// <summary>
     /// Cap the blur at max
     /// </summary>
-    private float maxBlur = 100f;
+    public float maxBlur = 200f;
 
 
     /// <summary>
@@ -90,11 +90,12 @@ public class CARLinearBlur : ImageEffectBase
         if (this.enabled)
         {
             // Calculate amount of blur. The blur corresponds to the movement of the target position in screen coordinates and is temporally smoothed.
-            Vector3 diff = (this.camera.WorldToScreenPoint(this.target.position) - this.targetLastPos);        
-            if (diff.sqrMagnitude < maxBlur*maxBlur)
-            {
+            Vector3 diff = (this.camera.WorldToScreenPoint(this.target.position) - this.targetLastPos);
+            Debug.Log(diff.magnitude);
+           // if (diff.sqrMagnitude < maxBlur)
+           // {
                 this.blurDirection = this.blurDirection * (this.stabilizerStrength) + new Vector2(diff.x, diff.y) * (1 - this.stabilizerStrength);
-            }            
+           // }            
             this.targetLastPos = this.camera.WorldToScreenPoint(this.target.position);            
         }
         else

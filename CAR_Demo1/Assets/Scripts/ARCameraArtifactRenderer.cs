@@ -23,25 +23,21 @@
 using UnityEngine;
 using System.Collections;
 
-
-/// <summary>
-/// Nice description 
-/// </summary>
 [RequireComponent(typeof(Camera))]
 public class ARCameraArtifactRenderer : MonoBehaviour
 {
 
     // Connect here the camera that renders the background video image
-    public Camera backgroundCamera;
+    //public Camera backgroundCamera;
     
 
     #region PRIVATE_MEMBER_VARIABLES
    
     // the target render texture for the camera
-    public RenderTexture renderTex;
+    //public RenderTexture renderTex;
 
     // the render material to overlay the background camera
-    public Material renderMat;    
+    //public Material renderMat;    
 
     #endregion PRIVATE_MEMBER_VARIABLES
 
