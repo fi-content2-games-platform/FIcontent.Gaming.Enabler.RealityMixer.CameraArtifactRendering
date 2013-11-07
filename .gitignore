@@ -8,3 +8,4 @@
 *.sln
 
 /CAR_Demo1/*.DotSettings
+/CAR_Demo1/*.suo
