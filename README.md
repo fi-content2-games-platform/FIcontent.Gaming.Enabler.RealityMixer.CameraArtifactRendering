@@ -1,4 +1,4 @@
-FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering
+Camera Artifact Rendering
 =============================================================
 This repository will contain the following Reality Mixer SEs of the FIcontent Pervasive Games Platform:
   * Camera Artifact Rendering SE 
