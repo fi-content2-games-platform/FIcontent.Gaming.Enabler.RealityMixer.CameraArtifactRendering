@@ -1,0 +1,26 @@
+Camera Artifact Rendering v0.1
+=============================================================
+This tutorial explains how to use the cameraArtifactRenderer Unity package. It was tested with Unity 4.3.1f1 and Vuforia v2.8.
+
+Starting from an empty project:
+
+1. Import a Vuforia AR package, for this tutorial use the imagetargets-2-8-9.unitypackage
+2. Open the provided scene Vuforia-ImageTarget. You should have the Vuforia ARCamera as well as at least one ImageTarget object in your scene.
+3. Run it to see if it works.
+4. Import the cameraArtifactRendererv0.1.unitypackage package.
+5. Add the CAR/Prefabs/BackgroundCamera prefab to your scene.
+6. Select the ARCamera and add a CARLinearBlur component.
+6.1 In the CARLinearBlur select the CARLinearBlur shader as the shader.
+6.2 In the CARLinearBlur set your ImageTarget object as the Target.
+7. Select the ARCameraRenderTexture as the TargetTexture for the ARCamera
+7. Increase the Size of the ARCameraRenderTexture for better quality, use e.g. 1024x1024.
+
+You should now see your virtual objects with added motion blur. 
+ - To increase the amount of blur, increase the Blur Multiplier value in the CARLinearBlur component.
+ - To make the blur more temporally stable, increase the Stabilizer Strength value in the CARLinearBlur component
+ 
+ 
+
+
+
+
