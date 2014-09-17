@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: 7d0e85e4ded5c4a40ab9f5e3bfbc43a3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Ciccio_lGun_Ctrl
+    100002: Ciccio_lGun_EmitterJ
+    100004: Ciccio_LOD0
+    100006: Ciccio_LOD1
+    100008: Ciccio_LOD2
+    100010: //RootNode
+    100012: Ciccio_rGun_Ctrl
+    100014: Ciccio_rGun_EmitterJ
+    100016: Ciccio_Root
+    100018: Ciccio_SH_HeadJ
+    100020: Ciccio_SH_HeadTipJ
+    100022: Ciccio_SH_lAnkleJ
+    100024: Ciccio_SH_lBallJ
+    100026: Ciccio_SH_lClavicleJ
+    100028: Ciccio_SH_lElbowJ
+    100030: Ciccio_SH_lFinger1J1
+    100032: Ciccio_SH_lFinger1J2
+    100034: Ciccio_SH_lFinger1J3
+    100036: Ciccio_SH_lFinger1JTip
+    100038: Ciccio_SH_lFinger2J1
+    100040: Ciccio_SH_lFinger2J2
+    100042: Ciccio_SH_lFinger2J3
+    100044: Ciccio_SH_lFinger2JTip
+    100046: Ciccio_SH_lFinger3J1
+    100048: Ciccio_SH_lFinger3J2
+    100050: Ciccio_SH_lFinger3J3
+    100052: Ciccio_SH_lFinger3JTip
+    100054: Ciccio_SH_lForearmJ
+    100056: Ciccio_SH_lHipJ
+    100058: Ciccio_SH_lKneeJ
+    100060: Ciccio_SH_lPalmJ
+    100062: Ciccio_SH_lShoulderJ
+    100064: Ciccio_SH_lThumbJ1
+    100066: Ciccio_SH_lThumbJ2
+    100068: Ciccio_SH_lThumbJ3
+    100070: Ciccio_SH_lThumbJTip
+    100072: Ciccio_SH_lToeJ
+    100074: Ciccio_SH_lWristJ
+    100076: Ciccio_SH_Neck01J
+    100078: Ciccio_SH_rAnkleJ
+    100080: Ciccio_SH_rBallJ
+    100082: Ciccio_SH_rClavicleJ
+    100084: Ciccio_SH_rElbowJ
+    100086: Ciccio_SH_rFinger1J1
+    100088: Ciccio_SH_rFinger1J2
+    100090: Ciccio_SH_rFinger1J3
+    100092: Ciccio_SH_rFinger1JTip
+    100094: Ciccio_SH_rFinger2J1
+    100096: Ciccio_SH_rFinger2J2
+    100098: Ciccio_SH_rFinger2J3
+    100100: Ciccio_SH_rFinger2JTip
+    100102: Ciccio_SH_rFinger3J1
+    100104: Ciccio_SH_rFinger3J2
+    100106: Ciccio_SH_rFinger3J3
+    100108: Ciccio_SH_rFinger3JTip
+    100110: Ciccio_SH_rForearmJ
+    100112: Ciccio_SH_rHipJ
+    100114: Ciccio_SH_rKneeJ
+    100116: Ciccio_SH_ROOTJ
+    100118: Ciccio_SH_rPalmJ
+    100120: Ciccio_SH_rShoulderJ
+    100122: Ciccio_SH_rThumbJ1
+    100124: Ciccio_SH_rThumbJ2
+    100126: Ciccio_SH_rThumbJ3
+    100128: Ciccio_SH_rThumbJTip
+    100130: Ciccio_SH_rToeJ
+    100132: Ciccio_SH_rWristJ
+    100134: Ciccio_SH_Spine01J
+    100136: Ciccio_SH_Spine02J
+    100138: Ciccio_SH_Spine03J
+    100140: Ciccio_SH_SpineTopJ
+    400000: Ciccio_lGun_Ctrl
+    400002: Ciccio_lGun_EmitterJ
+    400004: Ciccio_LOD0
+    400006: Ciccio_LOD1
+    400008: Ciccio_LOD2
+    400010: //RootNode
+    400012: Ciccio_rGun_Ctrl
+    400014: Ciccio_rGun_EmitterJ
+    400016: Ciccio_Root
+    400018: Ciccio_SH_HeadJ
+    400020: Ciccio_SH_HeadTipJ
+    400022: Ciccio_SH_lAnkleJ
+    400024: Ciccio_SH_lBallJ
+    400026: Ciccio_SH_lClavicleJ
+    400028: Ciccio_SH_lElbowJ
+    400030: Ciccio_SH_lFinger1J1
+    400032: Ciccio_SH_lFinger1J2
+    400034: Ciccio_SH_lFinger1J3
+    400036: Ciccio_SH_lFinger1JTip
+    400038: Ciccio_SH_lFinger2J1
+    400040: Ciccio_SH_lFinger2J2
+    400042: Ciccio_SH_lFinger2J3
+    400044: Ciccio_SH_lFinger2JTip
+    400046: Ciccio_SH_lFinger3J1
+    400048: Ciccio_SH_lFinger3J2
+    400050: Ciccio_SH_lFinger3J3
+    400052: Ciccio_SH_lFinger3JTip
+    400054: Ciccio_SH_lForearmJ
+    400056: Ciccio_SH_lHipJ
+    400058: Ciccio_SH_lKneeJ
+    400060: Ciccio_SH_lPalmJ
+    400062: Ciccio_SH_lShoulderJ
+    400064: Ciccio_SH_lThumbJ1
+    400066: Ciccio_SH_lThumbJ2
+    400068: Ciccio_SH_lThumbJ3
+    400070: Ciccio_SH_lThumbJTip
+    400072: Ciccio_SH_lToeJ
+    400074: Ciccio_SH_lWristJ
+    400076: Ciccio_SH_Neck01J
+    400078: Ciccio_SH_rAnkleJ
+    400080: Ciccio_SH_rBallJ
+    400082: Ciccio_SH_rClavicleJ
+    400084: Ciccio_SH_rElbowJ
+    400086: Ciccio_SH_rFinger1J1
+    400088: Ciccio_SH_rFinger1J2
+    400090: Ciccio_SH_rFinger1J3
+    400092: Ciccio_SH_rFinger1JTip
+    400094: Ciccio_SH_rFinger2J1
+    400096: Ciccio_SH_rFinger2J2
+    400098: Ciccio_SH_rFinger2J3
+    400100: Ciccio_SH_rFinger2JTip
+    400102: Ciccio_SH_rFinger3J1
+    400104: Ciccio_SH_rFinger3J2
+    400106: Ciccio_SH_rFinger3J3
+    400108: Ciccio_SH_rFinger3JTip
+    400110: Ciccio_SH_rForearmJ
+    400112: Ciccio_SH_rHipJ
+    400114: Ciccio_SH_rKneeJ
+    400116: Ciccio_SH_ROOTJ
+    400118: Ciccio_SH_rPalmJ
+    400120: Ciccio_SH_rShoulderJ
+    400122: Ciccio_SH_rThumbJ1
+    400124: Ciccio_SH_rThumbJ2
+    400126: Ciccio_SH_rThumbJ3
+    400128: Ciccio_SH_rThumbJTip
+    400130: Ciccio_SH_rToeJ
+    400132: Ciccio_SH_rWristJ
+    400134: Ciccio_SH_Spine01J
+    400136: Ciccio_SH_Spine02J
+    400138: Ciccio_SH_Spine03J
+    400140: Ciccio_SH_SpineTopJ
+    4300000: Ciccio_LOD0
+    4300002: Ciccio_LOD1
+    4300004: Ciccio_LOD2
+    7400000: Walk
+    7400002: Run
+    7400004: Idle
+    7400006: YesSir
+    7400008: ShootStart
+    7400010: Shoot
+    7400012: ShootEnd
+    7400014: Death
+    9500000: //RootNode
+    13700000: Ciccio_LOD0
+    13700002: Ciccio_LOD1
+    13700004: Ciccio_LOD2
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 11
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 1
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 41
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: YesSir
+      takeName: Take 001
+      firstFrame: 140
+      lastFrame: 212
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ShootStart
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 255
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Shoot
+      takeName: Take 001
+      firstFrame: 255
+      lastFrame: 319
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ShootEnd
+      takeName: Take 001
+      firstFrame: 319
+      lastFrame: 349
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 360
+      lastFrame: 397
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - .25
+    - .125
+    - .00999999978
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Ciccio_SH_ROOTJ
+      humanName: Hips
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 2.30388713, y: 0, z: 1.15194356}
+        length: 2.87985992
+        modified: 1
+    - boneName: Ciccio_SH_lHipJ
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: -60.0000038, y: -60.0000038, z: -90}
+        max: {x: 60.0000038, y: 60.0000038, z: 50}
+        value: {x: 2.09391713, y: 0, z: 1.04695857}
+        length: 2.61739755
+        modified: 1
+    - boneName: Ciccio_SH_rHipJ
+      humanName: RightUpperLeg
+      limit:
+        min: {x: -60.0000038, y: -60.0000038, z: -90}
+        max: {x: 60.0000038, y: 60.0000038, z: 50}
+        value: {x: 2.09391618, y: 0, z: 1.04695809}
+        length: 2.61739635
+        modified: 1
+    - boneName: Ciccio_SH_lKneeJ
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 3.14606333, y: 0, z: 1.57303166}
+        length: 3.93258023
+        modified: 1
+    - boneName: Ciccio_SH_rKneeJ
+      humanName: RightLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 3.146065, y: 0, z: 1.5730325}
+        length: 3.93258238
+        modified: 1
+    - boneName: Ciccio_SH_lAnkleJ
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: -30.0000019, z: -50}
+        max: {x: 0, y: 30.0000019, z: 50}
+        value: {x: 1.5114764, y: 0, z: .755738199}
+        length: 1.88934612
+        modified: 1
+    - boneName: Ciccio_SH_rAnkleJ
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: -30.0000019, z: -50}
+        max: {x: 0, y: 30.0000019, z: 50}
+        value: {x: 1.51147449, y: 0, z: .755737245}
+        length: 1.88934374
+        modified: 1
+    - boneName: Ciccio_SH_Spine01J
+      humanName: Spine
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 2.45582104, y: 0, z: 1.22791052}
+        length: 3.06977749
+        modified: 1
+    - boneName: Ciccio_SH_Spine02J
+      humanName: Chest
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 5.85072279, y: 0, z: 2.92536139}
+        length: 7.31340551
+        modified: 1
+    - boneName: Ciccio_SH_Neck01J
+      humanName: Neck
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 2.95005298, y: 0, z: 1.47502649}
+        length: 3.68756747
+        modified: 1
+    - boneName: Ciccio_SH_HeadJ
+      humanName: Head
+      limit:
+        min: {x: -40, y: -40, z: -40}
+        max: {x: 40, y: 40, z: 40}
+        value: {x: 2.95005298, y: 0, z: 1.47502649}
+        length: 3.68756747
+        modified: 1
+    - boneName: Ciccio_SH_lClavicleJ
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.0000019}
+        value: {x: 2.0695796, y: 0, z: 1.0347898}
+        length: 2.58697557
+        modified: 1
+    - boneName: Ciccio_SH_rClavicleJ
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: -15.000001, z: -15.000001}
+        max: {x: 0, y: 15.000001, z: 30.0000019}
+        value: {x: 2.06958079, y: 0, z: 1.0347904}
+        length: 2.58697724
+        modified: 1
+    - boneName: Ciccio_SH_lShoulderJ
+      humanName: LeftUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.0000038}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 4.02218342, y: 0, z: 2.01109171}
+        length: 5.02773142
+        modified: 1
+    - boneName: Ciccio_SH_rShoulderJ
+      humanName: RightUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60.0000038}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 4.0221858, y: 0, z: 2.0110929}
+        length: 5.02773428
+        modified: 1
+    - boneName: Ciccio_SH_lElbowJ
+      humanName: LeftLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 6.04855394, y: 0, z: 3.02427697}
+        length: 7.56069469
+        modified: 1
+    - boneName: Ciccio_SH_rElbowJ
+      humanName: RightLowerArm
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 6.04854918, y: 0, z: 3.02427459}
+        length: 7.5606885
+        modified: 1
+    - boneName: Ciccio_SH_lWristJ
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 3.02427697, y: 0, z: 1.51213849}
+        length: 3.78034735
+        modified: 1
+    - boneName: Ciccio_SH_rWristJ
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 3.02427459, y: 0, z: 1.51213729}
+        length: 3.78034425
+        modified: 1
+    - boneName: Ciccio_SH_lToeJ
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 1.91060138, y: 0, z: .955300689}
+        length: 2.38825226
+        modified: 1
+    - boneName: Ciccio_SH_rToeJ
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 1.91060245, y: 0, z: .955301225}
+        length: 2.38825369
+        modified: 1
+    - boneName: Ciccio_SH_lThumbJ1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: -25, z: -20}
+        max: {x: 0, y: 25, z: 20}
+        value: {x: .759527147, y: 0, z: .379763573}
+        length: .949409187
+        modified: 1
+    - boneName: Ciccio_SH_lThumbJ2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: .689710259, y: 0, z: .34485513}
+        length: .862138093
+        modified: 1
+    - boneName: Ciccio_SH_lThumbJ3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: .517282665, y: 0, z: .258641332}
+        length: .646603584
+        modified: 1
+    - boneName: Ciccio_SH_lFinger1J1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: .856051981, y: 0, z: .428025991}
+        length: 1.07006526
+        modified: 1
+    - boneName: Ciccio_SH_lFinger1J2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .769447565, y: 0, z: .384723783}
+        length: .961809754
+        modified: 1
+    - boneName: Ciccio_SH_lFinger1J3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .577085674, y: 0, z: .288542837}
+        length: .721357346
+        modified: 1
+    - boneName: Ciccio_SH_lFinger2J1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: -7.50000048, z: -50}
+        max: {x: 0, y: 7.50000048, z: 50}
+        value: {x: 1.00932169, y: 0, z: .504660845}
+        length: 1.26165271
+        modified: 1
+    - boneName: Ciccio_SH_lFinger2J2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .856038153, y: 0, z: .428019077}
+        length: 1.07004797
+        modified: 1
+    - boneName: Ciccio_SH_lFinger2J3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .64202857, y: 0, z: .321014285}
+        length: .802536011
+        modified: 1
+    - boneName: Ciccio_SH_lFinger3J1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: .856055677, y: 0, z: .428027838}
+        length: 1.07006991
+        modified: 1
+    - boneName: Ciccio_SH_lFinger3J2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .775842607, y: 0, z: .387921304}
+        length: .969803512
+        modified: 1
+    - boneName: Ciccio_SH_lFinger3J3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .581881881, y: 0, z: .29094094}
+        length: .727352619
+        modified: 1
+    - boneName: Ciccio_SH_rThumbJ1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: -25, z: -20}
+        max: {x: 0, y: 25, z: 20}
+        value: {x: .759535015, y: 0, z: .379767507}
+        length: .949419022
+        modified: 1
+    - boneName: Ciccio_SH_rThumbJ2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: .689711511, y: 0, z: .344855756}
+        length: .862139702
+        modified: 1
+    - boneName: Ciccio_SH_rThumbJ3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: .517283618, y: 0, z: .258641809}
+        length: .646604776
+        modified: 1
+    - boneName: Ciccio_SH_rFinger1J1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: .856050253, y: 0, z: .428025126}
+        length: 1.07006311
+        modified: 1
+    - boneName: Ciccio_SH_rFinger1J2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .769446075, y: 0, z: .384723037}
+        length: .961807907
+        modified: 1
+    - boneName: Ciccio_SH_rFinger1J3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .577084482, y: 0, z: .288542241}
+        length: .721355915
+        modified: 1
+    - boneName: Ciccio_SH_rFinger2J1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: -7.50000048, z: -50}
+        max: {x: 0, y: 7.50000048, z: 50}
+        value: {x: 1.00932324, y: 0, z: .50466162}
+        length: 1.26165462
+        modified: 1
+    - boneName: Ciccio_SH_rFinger2J2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .856038153, y: 0, z: .428019077}
+        length: 1.07004797
+        modified: 1
+    - boneName: Ciccio_SH_rFinger2J3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .64202857, y: 0, z: .321014285}
+        length: .802536011
+        modified: 1
+    - boneName: Ciccio_SH_rFinger3J1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: -20, z: -50}
+        max: {x: 0, y: 20, z: 50}
+        value: {x: .856052756, y: 0, z: .428026378}
+        length: 1.07006621
+        modified: 1
+    - boneName: Ciccio_SH_rFinger3J2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .775846601, y: 0, z: .3879233}
+        length: .969808519
+        modified: 1
+    - boneName: Ciccio_SH_rFinger3J3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: .581884861, y: 0, z: .29094243}
+        length: .727356374
+        modified: 1
+    skeleton:
+    - name: Ciccio_LOD
+      position: {x: -5.32907052e-15, y: 16.1190472, z: .799307108}
+      rotation: {x: 0, y: -0, z: -0, w: .99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_Root
+      position: {x: 5.32907052e-15, y: -16.1190472, z: -.799307108}
+      rotation: {x: 0, y: 0, z: 0, w: .99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_ROOTJ
+      position: {x: 0, y: 9.80219936, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: .99999994}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lHipJ
+      position: {x: -1.54229474, y: -1.58498573, z: 0}
+      rotation: {x: .520678043, y: .468979806, z: .462649018, w: .543054461}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lKneeJ
+      position: {x: -2.61739731, y: -2.00154864e-06, z: 5.42679516e-07}
+      rotation: {x: -.0114068575, y: .0131351165, z: .165878296, w: .98599273}
+      scale: {x: .99999994, y: .99999994, z: .999999642}
+      transformModified: 1
+    - name: Ciccio_SH_lAnkleJ
+      position: {x: -3.93258142, y: 2.30698788e-06, z: -6.46300506e-08}
+      rotation: {x: .00187663944, y: .0587625355, z: -.608941495, w: .791033268}
+      scale: {x: .999999821, y: .999999881, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_lBallJ
+      position: {x: -3.09971738, y: 1.42897932e-06, z: -9.69874691e-07}
+      rotation: {x: 1.64960656e-09, y: 4.167131e-08, z: -.276991367, w: .960872352}
+      scale: {x: 1.00000048, y: 1, z: 1.00000048}
+      transformModified: 1
+    - name: Ciccio_SH_lToeJ
+      position: {x: -1.8583951, y: -4.76018869e-08, z: 1.20328434e-06}
+      rotation: {x: 4.23145146e-08, y: -.707106769, z: 5.08631572e-08, w: .707106769}
+      scale: {x: .999999762, y: 1, z: .999999642}
+      transformModified: 1
+    - name: Ciccio_SH_rHipJ
+      position: {x: 1.5422945, y: -1.58498859, z: 2.98023224e-07}
+      rotation: {x: -.546501219, y: .465754002, z: -.465896219, w: .517059207}
+      scale: {x: 1, y: .999999583, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rKneeJ
+      position: {x: 2.61739659, y: -1.91232812e-06, z: 1.57678542e-07}
+      rotation: {x: -.00485692639, y: .0120330257, z: .165962428, w: .986046672}
+      scale: {x: 1.00000036, y: .99999994, z: .999999762}
+      transformModified: 1
+    - name: Ciccio_SH_rAnkleJ
+      position: {x: 3.93258095, y: 1.83745399e-07, z: -6.54937992e-07}
+      rotation: {x: -.00187663385, y: -.0587625206, z: .608941853, w: -.79103303}
+      scale: {x: .999999762, y: .999999523, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_SH_rBallJ
+      position: {x: 3.09971714, y: -3.29853606e-07, z: 4.64824893e-07}
+      rotation: {x: 5.70566039e-09, y: 4.05020693e-08, z: -.276991397, w: .960872352}
+      scale: {x: 1.0000006, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: Ciccio_SH_rToeJ
+      position: {x: 1.85839617, y: -6.72914098e-08, z: -6.47644697e-07}
+      rotation: {x: -3.68335833e-08, y: .707106769, z: 4.45419062e-08, w: .707106769}
+      scale: {x: .999999642, y: .999999523, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_Spine01J
+      position: {x: 0, y: 2.84907818, z: -.419943571}
+      rotation: {x: -.0962929949, y: 0, z: -0, w: .995352983}
+      scale: {x: 1.00000012, y: .999999702, z: .999999702}
+      transformModified: 1
+    - name: Ciccio_SH_Spine02J
+      position: {x: 0, y: 3.01533532, z: -.575581372}
+      rotation: {x: .00847881008, y: 4.43430737e-10, z: -2.84912827e-09, w: .999963999}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: Ciccio_SH_Spine03J
+      position: {x: 0, y: 2.86726713, z: .00904943328}
+      rotation: {x: .0425176546, y: 0, z: 0, w: .999095678}
+      scale: {x: 1.00000012, y: .99999994, z: .999999702}
+      transformModified: 1
+    - name: Ciccio_SH_SpineTopJ
+      position: {x: 0, y: 2.83130431, z: .62054956}
+      rotation: {x: -.443257511, y: .55092895, z: -.443257511, w: .55092895}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_SH_lClavicleJ
+      position: {x: 1.35939395, y: -.767905414, z: -8.13473988}
+      rotation: {x: .442291051, y: -.483472466, z: .454112172, w: .603667974}
+      scale: {x: 1.00000012, y: .999999702, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_lShoulderJ
+      position: {x: -2.58697462, y: -7.30873398e-06, z: -2.42541842e-06}
+      rotation: {x: .000382012367, y: -.0727904737, z: .0873184726, w: .993517399}
+      scale: {x: .999999642, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lElbowJ
+      position: {x: -5.02772808, y: -3.456179e-06, z: -1.80716063e-06}
+      rotation: {x: -.026750857, y: .0281501431, z: -.0069261482, w: .999221623}
+      scale: {x: 1.00000036, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lForearmJ
+      position: {x: -3.78033543, y: -4.4279459e-06, z: 9.32473256e-07}
+      rotation: {x: 7.46465219e-07, y: 1.6706446e-08, z: 1.63698264e-08, w: .99999994}
+      scale: {x: .999999642, y: 1.00000012, z: .99999994}
+      transformModified: 1
+    - name: Ciccio_SH_lWristJ
+      position: {x: -7.56068802, y: -1.03909379e-05, z: 2.85483948e-09}
+      rotation: {x: .0293184221, y: -.0267411489, z: -.0768933892, w: .996249318}
+      scale: {x: .999999762, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_lGun_Ctrl
+      position: {x: 2.16245174, y: 1.33480167, z: -.514277518}
+      rotation: {x: -.125535935, y: -.0907387212, z: .37604928, w: .913561165}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_lGun_EmitterJ
+      position: {x: -1.683236, y: 2.84128761, z: -.694047868}
+      rotation: {x: .0302740596, y: .160791337, z: -.596409976, w: .785827398}
+      scale: {x: 1.00000012, y: 1.0000006, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lPalmJ
+      position: {x: -.70000124, y: 4.21920348e-08, z: 2.96693359e-09}
+      rotation: {x: 8.126122e-09, y: 1.34617917e-08, z: 1.62132405e-08, w: .99999994}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger1J1
+      position: {x: -.769979775, y: -.407549083, z: 1.36586368}
+      rotation: {x: .0022469454, y: .0326099992, z: .0687044337, w: .997101367}
+      scale: {x: .99999994, y: .999999702, z: .999999881}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger1J2
+      position: {x: -1.07006383, y: -3.78774217e-07, z: 9.96171412e-09}
+      rotation: {x: -5.76585835e-10, y: -5.29784483e-09, z: -2.57032284e-09, w: .99999994}
+      scale: {x: .999999821, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger1J3
+      position: {x: -.961809397, y: -1.655919e-05, z: 2.23086928e-07}
+      rotation: {x: -3.10752206e-08, y: -4.52810809e-07, z: .0388195254, w: .99924618}
+      scale: {x: 1, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger1JTip
+      position: {x: -.697023749, y: -2.1783992e-06, z: 5.31721469e-07}
+      rotation: {x: 2.42056295e-08, y: 3.69763087e-09, z: 2.02839647e-08, w: .99999994}
+      scale: {x: .999999821, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger2J1
+      position: {x: -.770010948, y: -.22599414, z: -.0272663198}
+      rotation: {x: -6.68992683e-09, y: 4.60963517e-10, z: .0687411204, w: .99763447}
+      scale: {x: .999999881, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger2J2
+      position: {x: -1.26165235, y: -1.54623774e-06, z: -2.07211784e-07}
+      rotation: {x: 3.12023865e-08, y: 3.2242923e-08, z: -1.33426594e-08, w: .99999994}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger2J3
+      position: {x: -1.0700475, y: -2.39651617e-05, z: -1.41750618e-07}
+      rotation: {x: -2.80553838e-08, y: -2.01795018e-07, z: .0388263725, w: .999245942}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger2JTip
+      position: {x: -.959813297, y: 1.87647379e-06, z: -7.96956172e-08}
+      rotation: {x: 1.91537168e-08, y: -6.07589179e-09, z: -9.88731674e-09, w: .99999994}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger3J1
+      position: {x: -.770011663, y: -.346817404, z: -1.3139255}
+      rotation: {x: -.000753376458, y: -.0109335799, z: .0687369704, w: .997574568}
+      scale: {x: 1, y: 1.00000024, z: .999999702}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger3J2
+      position: {x: -1.07007003, y: 4.60898264e-06, z: -1.53880038e-07}
+      rotation: {x: 2.41809754e-08, y: 1.34507019e-08, z: -2.84525701e-08, w: .99999994}
+      scale: {x: 1.00000036, y: 1, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger3J3
+      position: {x: -.967522144, y: -.0664614961, z: -4.48054124e-07}
+      rotation: {x: -1.94679686e-08, y: -6.72483935e-08, z: .0381828696, w: .999270737}
+      scale: {x: .999999464, y: .99999994, z: .999999702}
+      transformModified: 1
+    - name: Ciccio_SH_lFinger3JTip
+      position: {x: -.563041091, y: -.0393561535, z: 1.6823634e-07}
+      rotation: {x: -1.58748907e-08, y: 1.19832153e-08, z: -5.8645643e-08, w: .99999994}
+      scale: {x: 1.00000012, y: .99999994, z: .999999762}
+      transformModified: 1
+    - name: Ciccio_SH_lThumbJ1
+      position: {x: -.0908358023, y: -.645973206, z: 1.38783765}
+      rotation: {x: .284104258, y: .459128588, z: -.0163603649, w: .841556847}
+      scale: {x: .999999881, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_lThumbJ2
+      position: {x: -.937441051, y: .139584944, z: -.0556591526}
+      rotation: {x: .00399851752, y: -.0546991676, z: -.0438019186, w: .997533619}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_lThumbJ3
+      position: {x: -.862137914, y: -1.5650603e-05, z: 1.75923888e-05}
+      rotation: {x: -5.90638436e-08, y: 8.79190247e-06, z: .0380693302, w: .999275029}
+      scale: {x: .999999344, y: .999999583, z: .999999404}
+      transformModified: 1
+    - name: Ciccio_SH_lThumbJTip
+      position: {x: -.89309144, y: 4.32743548e-07, z: -1.11068293e-05}
+      rotation: {x: -3.52082168e-08, y: -.70710659, z: -6.95980376e-08, w: .707106829}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1.00000048}
+      transformModified: 1
+    - name: Ciccio_SH_Neck01J
+      position: {x: -1.17499697, y: -3.49533749, z: -5.46254114e-07}
+      rotation: {x: .424965233, y: -.565158844, z: .424965143, w: .565158904}
+      scale: {x: 1.00000012, y: 1, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_HeadJ
+      position: {x: -5.28747876e-07, y: 3.0194459, z: 2.11686134}
+      rotation: {x: -.65786016, y: .259268165, z: -.65786016, w: .259268165}
+      scale: {x: .999999523, y: 1, z: .999999642}
+      transformModified: 1
+    - name: Ciccio_SH_HeadTipJ
+      position: {x: -3.38000274, y: -1.53174676e-06, z: 2.91735944e-07}
+      rotation: {x: .5, y: -.49999994, z: .5, w: .49999994}
+      scale: {x: 1.00000036, y: 1.00000024, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_rClavicleJ
+      position: {x: 1.35939908, y: -.767907202, z: 8.13473701}
+      rotation: {x: .483472466, y: .442291051, z: .603667974, w: -.454112172}
+      scale: {x: .99999994, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: Ciccio_SH_rShoulderJ
+      position: {x: 2.58697629, y: -1.04473463e-06, z: 3.03502702e-06}
+      rotation: {x: .00038201717, y: -.0727904886, z: .0873188823, w: .993517339}
+      scale: {x: .999999762, y: 1.0000006, z: 1.00000095}
+      transformModified: 1
+    - name: Ciccio_SH_rElbowJ
+      position: {x: 5.0277319, y: -2.51536153e-06, z: 3.39335315e-08}
+      rotation: {x: -.0267508514, y: .0281500462, z: -.00692645414, w: .999221623}
+      scale: {x: 1, y: .999998987, z: .999999523}
+      transformModified: 1
+    - name: Ciccio_SH_rForearmJ
+      position: {x: 3.78033543, y: 1.31034776e-05, z: 1.17734021e-06}
+      rotation: {x: 6.72421663e-07, y: -2.11545643e-08, z: 2.52221106e-08, w: .99999994}
+      scale: {x: 1.00000036, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: Ciccio_SH_rWristJ
+      position: {x: 7.5606842, y: 1.45159784e-05, z: 1.32917182e-06}
+      rotation: {x: .0293183513, y: -.0267411936, z: -.0768933818, w: .996249318}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Ciccio_rGun_Ctrl
+      position: {x: -1.85045123, y: -1.78934956, z: .46362105}
+      rotation: {x: .967002928, y: -.183988243, z: .170109808, w: .0460019037}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_rGun_EmitterJ
+      position: {x: 3.07508087, y: -.698219776, z: -.304441869}
+      rotation: {x: .0106413402, y: -.00613961788, z: -.0360211991, w: -.999275446}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_SH_rPalmJ
+      position: {x: .700001299, y: -2.93640738e-07, z: -2.08351778e-07}
+      rotation: {x: 1.72185253e-08, y: 4.58882745e-08, z: -1.07103446e-08, w: .99999994}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger1J1
+      position: {x: .769991457, y: .407541484, z: -1.36586463}
+      rotation: {x: -.997101367, y: -.0687044486, z: .0326099508, w: .00224696565}
+      scale: {x: 1.00000012, y: 1.00000024, z: 1.00000036}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger1J2
+      position: {x: 1.07006288, y: 6.35462754e-07, z: -7.85995724e-07}
+      rotation: {x: -2.60249156e-08, y: -2.4359732e-08, z: 2.99380432e-08, w: .99999994}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger1J3
+      position: {x: .961807728, y: -1.60987402e-05, z: 1.20568905e-06}
+      rotation: {x: 1.973393e-08, y: -7.4582141e-07, z: -.0388210453, w: .99924612}
+      scale: {x: 1.00000048, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger1JTip
+      position: {x: .697024405, y: -1.70887608e-06, z: -4.45406243e-07}
+      rotation: {x: -2.02598631e-08, y: 2.2817441e-10, z: 2.51713139e-08, w: .99999994}
+      scale: {x: .999999583, y: .999999523, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger2J1
+      position: {x: .7700122, y: .225991786, z: .0272662342}
+      rotation: {x: -.99763447, y: -.0687411353, z: -4.6963347e-08, w: 1.40233833e-08}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger2J2
+      position: {x: 1.2616545, y: -1.03949571e-06, z: -1.34527212e-07}
+      rotation: {x: -1.89140277e-08, y: -3.56961536e-08, z: 1.74399517e-08, w: .99999994}
+      scale: {x: 1, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger2J3
+      position: {x: 1.07004845, y: -2.33703686e-05, z: -2.53459007e-07}
+      rotation: {x: 4.65670524e-08, y: -1.53013282e-08, z: -.0388242416, w: .999246001}
+      scale: {x: 1.00000036, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger2JTip
+      position: {x: .959809601, y: 1.01707803e-06, z: 1.19770306e-07}
+      rotation: {x: 2.76810219e-08, y: 1.02237756e-08, z: -9.7290922e-09, w: .99999994}
+      scale: {x: .999999821, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger3J1
+      position: {x: .77001828, y: .346811444, z: 1.31392574}
+      rotation: {x: -.997574568, y: -.0687369853, z: -.0109336274, w: -.00075335562}
+      scale: {x: .999999762, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger3J2
+      position: {x: 1.0700655, y: 7.23145035e-07, z: 1.94854081e-07}
+      rotation: {x: -9.80393722e-09, y: -3.23162546e-08, z: 9.85258275e-09, w: .99999994}
+      scale: {x: 1.00000024, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger3J3
+      position: {x: .967528343, y: -.0664566979, z: -3.63068978e-07}
+      rotation: {x: 7.65551267e-09, y: -2.82597824e-07, z: -.0381803028, w: .999270797}
+      scale: {x: .999999881, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rFinger3JTip
+      position: {x: .56304276, y: -.0393534824, z: -3.74024268e-07}
+      rotation: {x: -6.93072666e-09, y: -6.43708109e-09, z: 9.7404671e-09, w: .99999994}
+      scale: {x: .99999994, y: 1.00000036, z: 1}
+      transformModified: 1
+    - name: Ciccio_SH_rThumbJ1
+      position: {x: .0908300802, y: .645992219, z: -1.38782644}
+      rotation: {x: -.46081844, y: .018960068, z: -.886628985, w: .0342911482}
+      scale: {x: 1.00000012, y: 1.00000012, z: .999999702}
+      transformModified: 1
+    - name: Ciccio_SH_rThumbJ2
+      position: {x: -.949418485, y: -5.20549202e-06, z: -6.0614143e-06}
+      rotation: {x: .00959253404, y: .0366994925, z: .0126679186, w: .999199986}
+      scale: {x: 1, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: Ciccio_SH_rThumbJ3
+      position: {x: -.862138689, y: 1.8666633e-05, z: -5.40652627e-06}
+      rotation: {x: .0141409673, y: .0206224713, z: .031972304, w: .999175906}
+      scale: {x: 1.00000072, y: 1, z: 1.00000095}
+      transformModified: 1
+    - name: Ciccio_SH_rThumbJTip
+      position: {x: -.893101633, y: 8.3381301e-06, z: 1.90606461e-05}
+      rotation: {x: -.204607874, y: -.676857054, z: .20460777, w: .676857233}
+      scale: {x: .99999994, y: .999999762, z: .999999881}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 1
+  userData: 
