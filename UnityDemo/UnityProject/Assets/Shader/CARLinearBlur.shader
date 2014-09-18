@@ -38,7 +38,7 @@ Shader "CARLinearBlur"
 				#include "UnityCG.cginc"
 	
 				float2 _Direction;
-				float4 _MainTex_ST;	
+				float4 _MainTex_ST;		
 				sampler2D _MainTex;
 
 				struct appdata_t {
@@ -49,8 +49,8 @@ Shader "CARLinearBlur"
 				struct v2f {
 					float4 vertex : POSITION;
 					float2 texcoord : TEXCOORD;
-				};
-				
+				};		
+			
 				v2f vert (appdata_t v)
 				{
 					v2f o;
@@ -58,14 +58,13 @@ Shader "CARLinearBlur"
 					o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
 					return o;
 				}
-	
+				
 				float4 frag (v2f i) : COLOR
-				{										
-					float4 sum = 0;
-					
+				{	
+					float4 sum = 0;					
 					for(int j=-4; j <= 4; j++)
 					{
-						float scale = j / float2(_ScreenParams) / 9;
+						float scale = j / (float2)(_ScreenParams) / 9;
 						sum += tex2D (_MainTex, i.texcoord + _Direction*scale);
 					}
 					

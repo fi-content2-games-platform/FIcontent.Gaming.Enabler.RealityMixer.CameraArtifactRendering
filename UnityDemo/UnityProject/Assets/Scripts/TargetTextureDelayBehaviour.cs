@@ -24,7 +24,7 @@ using System.Collections.Generic;
 
 public class TargetTextureDelayBehaviour : MonoBehaviour {
 
-    private int MAXDELAY = 36;
+    private int MAXDELAY = 8;
     private int delay;
 
     private RenderTexture[] texs;

@@ -1,0 +1,12 @@
+UnityDemo/UnityProject/Assembly-CSharp.csproj
+UnityDemo/UnityProject/Assembly-CSharp-Editor.csproj
+UnityDemo/UnityProject/Assembly-CSharp-Editor-vs.csproj
+UnityDemo/UnityProject/Assembly-CSharp-firstpass.csproj
+UnityDemo/UnityProject/Assembly-CSharp-firstpass-vs.csproj
+UnityDemo/UnityProject/Assembly-CSharp-vs.csproj
+UnityDemo/UnityProject/Assembly-UnityScript-Editor-firstpass.unityproj
+UnityDemo/UnityProject/Assembly-UnityScript-Editor-firstpass-vs.unityproj
+UnityDemo/UnityProject/Library
+UnityDemo/UnityProject/Temp/
+UnityDemo/UnityProject/*.sln
+UnityDemo/UnityProject/UnityProject.userprefs

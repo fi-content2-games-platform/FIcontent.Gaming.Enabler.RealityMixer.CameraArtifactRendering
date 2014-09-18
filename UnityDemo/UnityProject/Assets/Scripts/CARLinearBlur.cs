@@ -68,7 +68,7 @@ public class CARLinearBlur : ImageEffectBase
 	#region UNITY_MONOBEHAVIOUR_METHODS
 	
 	void Start()
-	{        
+	{ 		       
 		this.blurDirection = Vector2.zero;
 		this.targetLastPos = this.target.position;
 	}
@@ -85,8 +85,7 @@ public class CARLinearBlur : ImageEffectBase
 
 		
 		// Execute the shader
-		//material.SetVector("_Direction", blurDirection * blurMultiplier);
-		material.SetVector("_Direction", Vector2.zero);
+		material.SetVector("_Direction", blurDirection * blurMultiplier);
 		Graphics.Blit(source, destination, material);
 		
 	}
