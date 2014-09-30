@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="script/xml3d-4.6.js"></script>
+    <script type="text/javascript" src="script/xml3d-background.js"></script>
+    <script type="text/javascript" src="script/xml3d-webcam.js"></script>
+    <script type="text/javascript" src="arfft/xflow-nacl.js"></script>   
+    <title>XML3D Examples</title>
+  </head>
+  <body>
+    <div id="overall">
+      <div id="content">
+        <h1>Augmented Reality - Camera Motion Blur</h1>
+        <xml3d id="xml3d" style="width: 640px; height: 480px; border: 1px solid gray" activeView="#View" class="xml3d">
+
+          <!-- AR processing block -->
+          <data id="arBase" compute="transform, visibility, perspective = xflow.nacl(arvideo, marker)">
+
+            <texture name="arvideo">
+              <video autoplay="true" id="inputvideo" src="resources/mlvid.mp4"></video>
+            </texture>
+
+            <texture name="marker">
+              <img src="resources/paint_small-1024.jpg">
+            </texture>
+          </data>
+
+
+          <!-- Viewpoint with connection to AR data -->
+          <view id="View" perspective="#arBase"></view>
+
+
+          <shader id="background-fx" script="urn:xml3d:shader:background-video">
+            <data filter="rename({videoTex: arvideo})" src="#arBase"></data>
+          </shader>
+
+          <!-- Group with screen aligned quad to render video -->
+          <group shader="#background-fx" visible="false">
+            <mesh type="triangles" src="resources/basic.xml#mesh_quad"></mesh>
+          </group>
+
+
+          <!-- Group to be attached to the marker image - AR content -->
+          <group transform="#arBase">
+
+            <shader id="texShader" script="urn:xml3d:shader:phong">
+              <float3 name="diffuseColor">1.0 1.0 1.0</float3>
+              <float name="ambientIntensity">1.0</float>
+            </shader>
+
+            <!-- cube -->
+            <group style="shader: url(#texShader);">
+              <mesh type="triangles">
+                <data src="resources/basic.xml#mesh_cube"></data>
+                <texture name="diffuseTexture" wrapS="repeat" wrapT="repeat">
+                  <img src="resources/lena-color.png"/>
+                </texture>
+              </mesh>
+            </group>
+
+            <!-- (hidden) virtual marker
+            <group style="shader: url(#texShader); transform: scale3d(4.0, 1.0, 3.0) rotateX(90deg);" visible="false">
+              <mesh type="triangles">
+                <data src="resources/basic.xml#mesh_ground"></data>
+                <texture name="diffuseTexture" wrapS="repeat" wrapT="repeat">
+                  <img src="resources/paint_small-1024.jpg"/>
+                </texture>
+              </mesh>
+            </group>-->
+
+          </group>
+
+        </xml3d>
+        <script>
+        var lastX=0;
+        var lastY=0;
+        var cardx=0;
+        var cardy=0;
+
+        (function (webgl) {
+    console.log("Hallo Welt")
+
+    XML3D.shaders.register("camera-blur", {
+
+        vertex: [
+            "attribute vec3 position;",
+
+            "void main(void) {", "   gl_Position = vec4(position, 1.0);", "}"
+        ].join("\n"),
+
+        fragment: [
+            "uniform sampler2D diffuseBuffer;", "uniform vec2 direction;", "uniform vec2 canvasSize;",  "uniform sampler2D camImg;",
+
+            "void main(void) {", "vec2 texcoord = (gl_FragCoord.xy / canvasSize.xy);",
+            "vec3 sum = vec3(0.0,0.0,0.0);", "for(int j=-10; j <= 10; j++) {", " float scale = float(j) / 9.0 / 9.0;",
+            "float alpha = texture2D(diffuseBuffer, texcoord + direction*scale).a;",
+            " sum += mix(texture2D(camImg, texcoord).rgb, texture2D(diffuseBuffer, texcoord + direction*scale).rgb, alpha);",
+            "}",
+            "sum /= 21.0;",
+            
+            "gl_FragColor = vec4(sum, 1.0);", "}"
+        ].join("\n"),
+
+        addDirectives: function (directives, lights, params) {
+            //directives.push("RENDER_SSSS " + (XML3D.options.getValue("render-ssss") ? "1" : "0"));
+            //directives.push("RENDER_BLURRED " + (XML3D.options.getValue("render-blurred") ? "1" : "0"));
+        },
+
+        hasTransparency: function (params) {
+            return false;
+        },
+
+        uniforms: {
+            direction: [1.0, 0.5]
+        },
+
+        samplers: {
+            diffuseBuffer: null,
+            camImg: null
+        },
+
+        attributes: {
+        }
+    });
+
+    var CameraBlurPass = function (renderInterface, output, opt) {
+        webgl.BaseRenderPass.call(this, renderInterface, output, opt);
+        this._screenQuad = new XML3D.webgl.FullscreenQuad(this.renderInterface.context);
+        this._uniformsDirty = true;
+        this._program = this.renderInterface.context.programFactory.getProgramByName("camera-blur");
+        this._blurDir = opt.blurDir;
+
+
+    };
+
+    XML3D.createClass(CameraBlurPass, webgl.BaseRenderPass);
+
+    XML3D.extend(CameraBlurPass.prototype, {
+        render: (function () {
+            return function (scene) {
+                var gl = this.renderInterface.context.gl;
+                var target = this.output;
+
+                target.bind();
+                gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+                gl.disable(gl.DEPTH_TEST);
+
+                this._program.bind();
+                this._setNonVolatileShaderUniforms(scene);
+
+                this._screenQuad.draw(this._program);
+
+                this._program.unbind();
+                target.unbind();
+            }
+        }()),
+
+        _setNonVolatileShaderUniforms: (function () {
+            var uniforms = {};
+            var uniformNames = ["canvasSize", "diffuseBuffer","direction", "camImg"];
+
+            return function (scene) {
+                if (!this._uniformsDirty)
+                    return;
+
+                var program = this._program;
+                var target = this.output;
+
+                var STRENGHT = 1.0;     // Defines the strength of the blur. Should be set depending on the amount of light in the scene
+                var STABILIZING = 0.2;  // Defines the temporal smoothness
+
+
+                uniforms["canvasSize"] = [target.width, target.height];
+                uniforms["diffuseBuffer"] = [this.inputs.diffuseBuffer.colorTarget.handle];
+                uniforms["direction"]  = [0.8,0.5];
+                cardx = (scene.systemUniforms.modelMatrix[12] - lastX) * STABILIZING + (cardx*(1.0-STABILIZING));
+                cardy = (scene.systemUniforms.modelMatrix[13] - lastY) * STABILIZING + (cardy*(1.0-STABILIZING));
+                //uniforms["direction"]  = [0.8,0.5];
+                uniforms["direction"]  = [cardx*STRENGHT,cardy*STRENGHT];
+                uniforms["camImg"] = [ document.querySelector("video")._configured.adapters["data_0"].textureEntry.userData.webglData[1].texture ];
+
+                lastX = scene.systemUniforms.modelMatrix[12];       
+                lastY = scene.systemUniforms.modelMatrix[13];   
+
+
+                //uniforms["direction"] = this._blurDir;
+                program.setSystemUniformVariables(uniformNames, uniforms);
+//              this._uniformsDirty = false;
+            }
+        })()
+    });
+
+
+    var CameraBlurRenderTree = function (renderInterface, enableSSAO) {
+        webgl.BaseRenderTree.call(this, renderInterface);
+        var context = this.renderInterface.context;
+
+        var diffuseBuffer = new webgl.GLRenderTarget(context, {
+            width: context.canvasTarget.width,
+            height: context.canvasTarget.height,
+            colorFormat: context.gl.RGBA,
+            colorType: context.gl.FLOAT,
+            depthFormat: context.gl.DEPTH_COMPONENT16,
+            stencilFormat: null,
+            depthAsRenderbuffer: true
+        });
+        this._forwardPass = new webgl.ForwardRenderPass(this.renderInterface, diffuseBuffer, { });
+
+        this._blurPass = new CameraBlurPass(this.renderInterface, context.canvasTarget, {
+            inputs: {
+                diffuseBuffer: diffuseBuffer
+            }
+        });
+        this._blurPass.addPrePass(this._forwardPass);
+        this.mainRenderPass = this._blurPass;
+
+    };
+
+    XML3D.createClass(CameraBlurRenderTree, webgl.BaseRenderTree, {
+        render: function (scene) {
+            this._blurPass.setProcessed(false);
+            this._forwardPass.setProcessed(false);
+            this._blurPass.renderTree(scene);
+
+        },
+        getRenderStats: function () {
+            return 0;
+        }
+    });
+
+
+document.addEventListener("load", function() {
+    var xml3d = document.querySelector("xml3d");
+    if (!xml3d) {
+        console.error("XML3D scene not found. Exiting");
+        return;
+    }
+    var rI = xml3d.getRenderInterface();
+    if(!rI)
+    {
+      console.error("There is no render interface...");
+    }
+
+    var pipeline = new CameraBlurRenderTree(rI, true);
+    rI.setRenderPipeline(pipeline);
+});
+}(XML3D.webgl));
+
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
