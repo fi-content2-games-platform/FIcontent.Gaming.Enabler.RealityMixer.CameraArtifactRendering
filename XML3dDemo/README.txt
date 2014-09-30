@@ -1,6 +1,9 @@
 Camera Artifact Rendering v0.2.0 - 2014-09-30
 =============================================================
 
+A live-demo of this project can be seen here:
+http:\\graphics.ethz.ch\research\argroup\FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\\XML3dDemo\carDemo.html
+
 ==XML3D Folder==
 
 1) Copy the content of this folder to your webserver and browse to carDemo.html. 
