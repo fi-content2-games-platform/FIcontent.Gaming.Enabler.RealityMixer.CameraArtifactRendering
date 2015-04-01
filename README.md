@@ -12,10 +12,15 @@ Unity Demo
 Tested with Unity 4.6.0 and Vuforia SDK 3.0.9
 
 1) To run the Unity demo open the folder "FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\UnityDemo\UnityProject" in Unity version 4.6.0.
+
 2) Open scene "MainScene".
+
 3) Print AugmentedResistance_Marker.jpg image in "FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\UnityDemo\Marker".
+
 4) On the object "ARCamera" in the "Web Cam Behaviour" component choose your camera device, for example your webcam.
+
 5) Run, point your webcam at the printed marker, and move the camera around. You should see how the character is blurred when you move fast.
+
 6) To change the strength of the camera blur change the "Blur Multiplier" value in the "CarLinear Blur" component on the "ARCamera" object.
 
 
