@@ -42,5 +42,7 @@ To deploy the XML3D demo project copy the folder "FIcontent.Gaming.Enabler.Reali
 
 Notes:
 In the file carDemo.html you find two parameters to configure the blur on line 169 and 170:
-	var STRENGHT = 1.0;			// Defines the strength of the blur. Should be set depending 								on the amount of light in the scene
+
+	var STRENGHT = 1.0;			// Defines the strength of the blur. Should be set depending on the amount of light in the scene
+
 	var STABILIZING = 0.2;		// Defines the temporal smoothness
