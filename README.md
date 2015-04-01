@@ -28,6 +28,8 @@ Notes
 - The project is configured for a 4:3 camera and a 16:9 screen. You can change the scale of the VideoTexturePlane and the game aspect to configure for other aspect ratios.
 - You can also add blur to the background image using the "CARLinear Blur" component attached to the "BackgroundCamera" object.
 - In order to use these camera effects for your own project simply start with the provided Unity demo project and add your content and functionality.
+- You cannot build a desktop app from this project (Linux, Mac, Win) because the Vuforia SDK does not support it. Only Android and iOS apps are supported and the project can be run within the Unity editor.
+
 
 =============================================================
 XML3D Demo
