@@ -448,8 +448,8 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: 3120b3559d1fc2b4783610710964cddf, type: 3}
   target: {fileID: 1916856898}
   cam: {fileID: 353061392}
-  stabilizerStrength: .699999988
-  blurMultiplier: 0
+  stabilizerStrength: .5
+  blurMultiplier: 1
 --- !u!114 &353061396
 MonoBehaviour:
   m_ObjectHideFlags: 0
