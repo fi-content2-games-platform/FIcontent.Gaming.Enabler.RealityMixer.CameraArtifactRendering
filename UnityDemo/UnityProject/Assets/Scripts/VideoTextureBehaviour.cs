@@ -338,7 +338,7 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
             }
         }
 
-        //m_Camera.orthographicSize = 1//visibleHeight;
+       // m_Camera.orthographicSize = 1/visibleHeight;
     }
 
     // Returns true if the video mesh should be scaled to match the width of the screen

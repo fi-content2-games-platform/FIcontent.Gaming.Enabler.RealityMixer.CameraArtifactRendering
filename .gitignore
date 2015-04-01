@@ -10,3 +10,12 @@ UnityDemo/UnityProject/Library
 UnityDemo/UnityProject/Temp/
 UnityDemo/UnityProject/*.sln
 UnityDemo/UnityProject/UnityProject.userprefs
+UnityDemo/UnityProject/Assets/UnityVS.meta
+UnityDemo/UnityProject/Assets/UnityVS/
+UnityDemo/UnityProject/UnityVS.UnityProject.sln.DotSettings
+UnityDemo/UnityProject/obj/
+UnityDemo/UnityProject/UnityVS.UnityProject.CSharp.Editor.csproj
+UnityDemo/UnityProject/UnityVS.UnityProject.CSharp.Plugins.csproj
+UnityDemo/UnityProject/UnityVS.UnityProject.CSharp.csproj
+UnityDemo/UnityProject/UnityVS.UnityProject.UnityScript.Editor.Plugins.unityproj
+UnityDemo/UnityProject/UnityVS.UnityProject.suo

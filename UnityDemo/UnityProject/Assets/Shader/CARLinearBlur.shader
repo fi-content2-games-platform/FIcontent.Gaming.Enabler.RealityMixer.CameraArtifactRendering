@@ -64,7 +64,7 @@ Shader "CARLinearBlur"
 					float4 sum = 0;					
 					for(int j=-4; j <= 4; j++)
 					{
-						float scale = j / (float2)(_ScreenParams) / 9;
+						float scale = j / (float2)(_ScreenParams);
 						sum += tex2D (_MainTex, i.texcoord + _Direction*scale);
 					}
 					
