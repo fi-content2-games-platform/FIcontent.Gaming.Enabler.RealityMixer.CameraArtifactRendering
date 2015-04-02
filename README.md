@@ -9,7 +9,7 @@ the documentation of the Pervasive Games Platform at http://wiki.ficontent.eu/do
 =============================================================
 Unity Demo
 =============================================================
-Tested with Unity 4.6.0 and Vuforia SDK 3.0.9
+Tested with Unity 4.6.0 and Vuforia SDK 3.0.9.
 
 1) To run the Unity demo open the folder "FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\UnityDemo\UnityProject" in Unity version 4.6.0.
 
@@ -34,16 +34,18 @@ Notes
 =============================================================
 XML3D Demo
 =============================================================
+Developed for the Chrome browser for Win/MacOS/Linux.
 
 A live-demo of this project can be seen here:
-http:\graphics.ethz.ch\research\argroup\FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\XML3dDemo\carDemo.html
+https://graphics.ethz.ch/research/argroup/FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering/XML3dDemo/carDemo.html
+
 
 Use a bright light source as marker, point it into your camera, and move it around. The cube will follow the light source and it will be blurred according to its velocity.
 
 To deploy the XML3D demo project copy the folder "FIcontent.Gaming.Enabler.RealityMixer.CameraArtifactRendering\XML3dDemo" to your webserver and browse to carDemo.html. 
 
 Notes:
-In the file carDemo.html you find two parameters to configure the blur on line 169 and 170:
+- In the file carDemo.html you find two parameters to configure the blur on line 169 and 170:
 
 	var STRENGHT = 1.0;			// Defines the strength of the blur. Should be set depending on the amount of light in the scene
 
