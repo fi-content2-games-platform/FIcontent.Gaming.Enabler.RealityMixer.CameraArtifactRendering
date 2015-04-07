@@ -42,7 +42,12 @@ public class CameraImageAccess : MonoBehaviour, ITrackerEventHandler
             }
             else
             {
-                message = "This demo is configured for a 16:9 screen and a camera image with an aspect ratio of 1.33 (4:3). Your camera has a resolution of " + image.Width + "x" + image.Height + " pixels, aspect ratio " + (Mathf.Round((float)image.Width / image.Height * 100) / 100);
+                //Android build
+                //message = "This demo is configured for the Nexus 7 tablet (screen aspect ratio 1.74, camera aspect ratio 1.33). Your screen resolution is " + Screen.width + " x " + Screen.height + " pixels (aspect ratio " + (Mathf.Round((float)Screen.width / Screen.height * 100) / 100) + "). Your camera has a resolution of " + image.Width + "x" + image.Height + " pixels (aspect ratio " + (Mathf.Round((float)image.Width / image.Height * 100) / 100) + ")";
+                
+                //Unity Editor demo
+                message = "This demo is configured for a screen aspect ratio of 1.78 (16:9) and a camera aspect ratio of 1.33 (4:3). Your screen resolution is " + Screen.width + " x " + Screen.height + " pixels (aspect ratio " + (Mathf.Round((float)Screen.width / Screen.height * 100) / 100) + "). Your camera has a resolution of " + image.Width + "x" + image.Height + " pixels (aspect ratio " + (Mathf.Round((float)image.Width / image.Height * 100) / 100) + ")";
+                
                 string s = m_PixelFormat + " image: \n";
                 s += "  size: " + image.Width + "x" + image.Height + "\n";
                 s += "  bufferSize: " + image.BufferWidth + "x" + image.BufferHeight + "\n";
@@ -55,6 +60,6 @@ public class CameraImageAccess : MonoBehaviour, ITrackerEventHandler
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 600, 200), message);
+        GUI.Label(new Rect(20, 20, 800, 200), message);
     }
 }
