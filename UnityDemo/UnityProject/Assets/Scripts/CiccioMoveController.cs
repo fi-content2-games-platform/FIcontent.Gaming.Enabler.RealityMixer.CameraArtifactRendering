@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Simple move controller for the Ciccio main character model
+/// </summary>
 public class CiccioMoveController : MonoBehaviour
 {
     private NavMeshAgent agent;
@@ -17,15 +20,12 @@ public class CiccioMoveController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-
         this.animator.SetBool("Move", this.agent.velocity.magnitude > 0);
        
-
         if (Time.time > lastTime + 4)
         {
             this.agent.destination = new Vector3(Random.Range(-4, 4), 0, Random.Range(-4, 4));
             lastTime = Time.time;
-
         }
 	}
 }

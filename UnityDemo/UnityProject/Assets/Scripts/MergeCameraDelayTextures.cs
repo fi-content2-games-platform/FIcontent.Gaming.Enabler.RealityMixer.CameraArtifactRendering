@@ -22,13 +22,24 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Calls the merge shader to overlay a foreground and background camera image (with alpha).
+/// </summary>
 public class MergeCameraDelayTextures : ImageEffectBase {
 
+    /// <summary>
+    /// The background camera image.
+    /// </summary>
 	public TargetTextureDelayBehaviour bgTexture;
+
+    /// <summary>
+    /// The foreground camera image.
+    /// </summary>
 	public TargetTextureDelayBehaviour fgTexture;
 	
-
+    /// <summary>
+    /// Executes the shader.
+    /// </summary>
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {		
 
 		material.SetTexture ("_BgTexture", bgTexture.OutTexture());

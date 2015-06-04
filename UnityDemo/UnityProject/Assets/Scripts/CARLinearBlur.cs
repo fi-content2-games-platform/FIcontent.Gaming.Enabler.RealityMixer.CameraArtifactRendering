@@ -22,8 +22,13 @@
 
 
 using UnityEngine;
+
+
 [ExecuteInEditMode]
 [AddComponentMenu("Image Effects/CARLinearBlur")]
+/// <summary>
+/// Applies the linear motion blur shader to the camera it is attached to. The amount and direction of blur is calculated from the movement of the public Camera cam parameter.
+/// </summary>
 public class CARLinearBlur : ImageEffectBase
 {   
 	
@@ -36,19 +41,18 @@ public class CARLinearBlur : ImageEffectBase
 	/// The camera from which the blur is calculated
 	/// </summary>
 	public Camera cam;
-	
-	/// <summary>
-	/// The temporal smoothing term
-	/// </summary>
-	[Range(0,1)]
-	public float stabilizerStrength = 0.5f;
-	
-	/// <summary>
-	/// For different exposures, the blur strength needs to be adjusted
-	/// </summary>
-	[Range(0,20)]
-	public float blurMultiplier = 0.9f;
-	
+
+    /// <summary>
+    /// The temporal smoothing term. Use low values for quick moving cameras and higher values for steadier cameras.
+    /// </summary>
+    [Range(0, 1)]
+    public float stabilizerStrength = 0.7f;
+
+    /// <summary>
+    /// Defines the strength of the blur. The blur strength needs to be adjusted for different light conditions of the room. Bright rooms need a lower value.
+    /// </summary>
+    [Range(0, 1)]
+    public float blurMultiplier = 0.3f;
 	
 	
 	#region PRIVATE_MEMBER_VARIABLES
@@ -66,15 +70,19 @@ public class CARLinearBlur : ImageEffectBase
 	#endregion PRIVATE_MEMBER_VARIABLES
 	
 	#region UNITY_MONOBEHAVIOUR_METHODS
-	
+
+    /// <summary>
+    /// Initializes the component.
+    /// </summary>
 	void Start()
 	{ 		       
 		this.blurDirection = Vector2.zero;
 		this.targetLastPos = this.target.position;
 	}
-	
-	
-	// Called by camera to apply image effect
+
+    /// <summary>
+    /// Execute the shader
+    /// </summary>
 	void OnRenderImage(RenderTexture source, RenderTexture destination)
 	{
 		// Calculate amount of blur. The blur corresponds to the movement of the target position in screen coordinates and is temporally smoothed.
@@ -83,11 +91,9 @@ public class CARLinearBlur : ImageEffectBase
 		this.blurDirection = this.blurDirection * (this.stabilizerStrength) + new Vector2(diff.x, diff.y) * (1 - this.stabilizerStrength);           
 		this.targetLastPos = this.cam.WorldToScreenPoint(this.target.position);            
 
-		
 		// Execute the shader
 		material.SetVector("_Direction", blurDirection * blurMultiplier);
 		Graphics.Blit(source, destination, material);
-		
 	}
 	
 	#endregion UNITY_MONOBEHAVIOUR_METHODS

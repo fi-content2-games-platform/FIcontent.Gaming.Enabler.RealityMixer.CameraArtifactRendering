@@ -22,14 +22,35 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+
+/// <summary>
+/// Maintains an array of camera image textures frames. An older frame that the current one can be accessed. This component can be used to simulate camera image delay effects.
+/// </summary>
 public class TargetTextureDelayBehaviour : MonoBehaviour {
 
+    /// <summary>
+    /// The number of frames stored and the maximum number of delay possible.
+    /// </summary>
     private int MAXDELAY = 8;
+
+    /// <summary>
+    /// The used delay (in number of frames).
+    /// </summary>
     private int delay;
 
+    /// <summary>
+    /// The array of frames
+    /// </summary>
     private RenderTexture[] texs;
+
+    /// <summary>
+    /// The last used frame.
+    /// </summary>
     int currentWriteTex;
    
+    /// <summary>
+    /// Used to access the delay publicly
+    /// </summary>
     public int Delay
     {
         get{ return delay; }
@@ -39,7 +60,9 @@ public class TargetTextureDelayBehaviour : MonoBehaviour {
         }
     }
 
-	
+	/// <summary>
+	/// Initializes the component.
+	/// </summary>
     void Start () {
         delay = 0;
         texs = new RenderTexture[MAXDELAY];
@@ -51,8 +74,10 @@ public class TargetTextureDelayBehaviour : MonoBehaviour {
     }
 	
 	
+    /// <summary>
+    /// Set this camera's target texture to the next one in the array
+    /// </summary>
 	void OnPreRender() {
-        //set this camera's target texture to the next one in the array
         this.camera.targetTexture = texs[currentWriteTex];
         currentWriteTex++;
         if (currentWriteTex >= delay)
@@ -61,9 +86,12 @@ public class TargetTextureDelayBehaviour : MonoBehaviour {
         }
 	}
 
+    /// <summary>
+    /// Provides the texture given the current delay.
+    /// </summary>
+    /// <returns></returns>
     public RenderTexture OutTexture()
     {
-        //copy the "DEALY"-ago written render texture to the out tex
         int readTexIndex = currentWriteTex + 1;
         if (readTexIndex >= delay)
         {

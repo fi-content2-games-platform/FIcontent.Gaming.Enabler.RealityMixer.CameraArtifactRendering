@@ -19,6 +19,10 @@
  * THE SOFTWARE.
  */
 
+
+/// <summary>
+/// Overlays _FgTexture on _BgTexture, respecting _FgTexture's alpha values.
+/// </summary>
 Shader "Custom/MergeTextures" {
 	Properties {
 		_MainTex ("Screen Blended", 2D) = "" {}

@@ -1,6 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿/*==============================================================================
+Copyright (c) 2012-2013 Qualcomm Austria Research Center GmbH.
+All Rights Reserved.
+==============================================================================*/
 
+using UnityEngine;
+using System.Collections;
 
 public class CameraImageAccess : MonoBehaviour, ITrackerEventHandler
 {

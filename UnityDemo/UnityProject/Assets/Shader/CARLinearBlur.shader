@@ -19,7 +19,9 @@
  * THE SOFTWARE.
  */
 
-
+/// <summary>
+/// Applies a 9-sample linear motion blur to the image.
+/// </summary>
 Shader "CARLinearBlur" 
 {
 	Properties 
